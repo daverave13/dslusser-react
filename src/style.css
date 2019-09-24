@@ -1,0 +1,82 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica;
+  box-sizing: border-box;
+  cursor: default;
+}
+
+textarea:focus,
+input:focus {
+  outline: none;
+}
+
+.App {
+  position: relative;
+  background-color: dodgerblue;
+  min-height: 100vh;
+}
+
+#input {
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40vw;
+  padding-left: 20px;
+  margin: 50px 0;
+  border-radius: 1000px;
+  font-size: 25px;
+}
+
+.links,
+.manhattanLinks {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.link {
+  position: relative;
+  padding: 7px;
+  margin: 10px 50px;
+  background: linear-gradient(rgb(230, 21, 62), rgb(212, 20, 58));
+  color: white;
+  border-radius: 100px;
+  width: 170px;
+  transition: all 0.2s;
+  user-select: none;
+  border-bottom: solid 4px rgb(141, 14, 39);
+}
+
+.link:hover {
+  transform: translateY(-10px);
+  box-shadow: 1px 10px 20px rgba(3, 1, 1, 0.733);
+  transform: scale(1.05);
+}
+
+a:focus div.link {
+  transform: translateY(-10px);
+  box-shadow: 1px 10px 20px rgba(1, 1, 1, 0.733);
+  transform: scale(1.05);
+}
+
+.link:active {
+  transform: translateY(10px);
+}
+
+.link-url {
+  position: absolute;
+  display: inline;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10px;
+  font-size: 20px;
+  text-decoration: none;
+  color: white;
+}
+
+.link-img {
+  border-radius: 1000px;
+  width: 40px;
+  height: 40px;
+}
