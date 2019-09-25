@@ -48,6 +48,10 @@ input:focus {
   border-bottom: solid 4px rgb(141, 14, 39);
 }
 
+a {
+  transition: all 0.2s;
+}
+
 .link:hover {
   transform: translateY(-10px);
   box-shadow: 1px 10px 20px rgba(3, 1, 1, 0.733);
@@ -60,7 +64,7 @@ a:focus div.link {
   transform: scale(1.05);
 }
 
-.link:active {
+a:active {
   transform: translateY(10px);
 }
 

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="blinky blinky-on"></div>
+    <button id="start-stop-button">STOP</button>
+
+    <script type="text/javascript">
+      let started = true;
+      const blinky = document.querySelector(".blinky");
+      const button = document.getElementById("start-stop-button");
+
+      (() => {
+        setInterval(() => {
+          if (started) {
+            if ([...blinky.classList].includes("blinky-on")) {
+              blinky.classList.remove("blinky-on");
+            } else {
+              blinky.classList.add("blinky-on");
+            }
+          }
+        }, 1000);
+      })();
+
+      document
+        .getElementById("start-stop-button")
+        .addEventListener("click", () => {
+          button.innerHTML = started ? "START" : "STOP";
+          started = !started;
+        });
+    </script>
+
+    <style>
+      html {
+        background-color: aliceblue;
+      }
+
+      .blinky {
+        height: 20px;
+        width: 20px;
+        border-radius: 1000px;
+        transition: all 0.3s ease-out;
+        position: relative;
+        left: 50%;
+        margin: 5vh 0;
+        transform: translateX(-50%);
+        background-color: gray;
+      }
+
+      .blinky-on {
+        background-color: red;
+        box-shadow: 0 0 20px rgba(255, 0, 0, 0.9);
+      }
+
+      #start-stop-button {
+        position: relative;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    </style>
+  </body>
+</html>

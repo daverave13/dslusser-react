@@ -47,15 +47,25 @@ class App extends React.Component {
     manhattanLinks = preFilterManhattanLinks.filter(event =>
       event.props.title.toUpperCase().includes(filterValue)
     );
-    console.log(manhattanLinks.length);
 
-    return (
-      <div className="App">
-        <Filter parentCallback={this.filterValueCallback} />
-        <div className="links">{links}</div>
-        <div className="manhattanLinks">{manhattanLinks}</div>
-      </div>
-    );
+    if (links.length + manhattanLinks.length > 0) {
+      return (
+        <div className="App">
+          <Filter parentCallback={this.filterValueCallback} />
+          <div className="links">{links}</div>
+          <div className="manhattanLinks">{manhattanLinks}</div>
+        </div>
+      );
+    } else {
+      return (
+        <div className="App">
+          <h1>No links found, learn how to spell?</h1>
+          <Filter parentCallback={this.filterValueCallback} />
+          <div className="links">{links}</div>
+          <div className="manhattanLinks">{manhattanLinks}</div>
+        </div>
+      );
+    }
   }
 }
 
