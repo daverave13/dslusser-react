@@ -33,6 +33,10 @@ class App extends React.Component {
     document.getElementById("input").focus();
   }
 
+  componentDidUpdate() {
+    document.getElementById("input").focus();
+  }
+
   filterValueCallback = event => {
     this.setState({
       filterValue: event.target.value
@@ -48,24 +52,13 @@ class App extends React.Component {
       event.props.title.toUpperCase().includes(filterValue)
     );
 
-    if (links.length + manhattanLinks.length > 0) {
-      return (
-        <div className="App">
-          <Filter parentCallback={this.filterValueCallback} />
-          <div className="links">{links}</div>
-          <div className="manhattanLinks">{manhattanLinks}</div>
-        </div>
-      );
-    } else {
-      return (
-        <div className="App">
-          <h1>No links found, learn how to spell?</h1>
-          <Filter parentCallback={this.filterValueCallback} />
-          <div className="links">{links}</div>
-          <div className="manhattanLinks">{manhattanLinks}</div>
-        </div>
-      );
-    }
+    return (
+      <div className="App">
+        <Filter parentCallback={this.filterValueCallback} />
+        <div className="links">{links}</div>
+        <div className="manhattanLinks">{manhattanLinks}</div>
+      </div>
+    );
   }
 }
 
