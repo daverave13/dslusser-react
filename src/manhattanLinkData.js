@@ -107,13 +107,6 @@ export default [
     src: manhattanLogo,
   },
   {
-    id: 16,
-    title: "ABQ DEV",
-    alt: "Manhattan Logo",
-    url: "http://mand1xa1.niagarawater.com:30000/",
-    src: manhattanLogo,
-  },
-  {
     id: 17,
     title: "CON DEV",
     alt: "Manhattan Logo",
@@ -179,13 +172,6 @@ export default [
   {
     id: 26,
     title: "PHX DEV",
-    alt: "Manhattan Logo",
-    url: "http://mand2xa2.niagarawater.com:12500/",
-    src: manhattanLogo,
-  },
-  {
-    id: 27,
-    title: "ABQ UAT",
     alt: "Manhattan Logo",
     url: "http://mand2xa2.niagarawater.com:12500/",
     src: manhattanLogo,
