@@ -19,7 +19,7 @@ export default [
     id: 3,
     title: "ABQ Prod",
     alt: "Manhattan Logo",
-    url: "http://manp1xa2.niagarawater.com/22000",
+    url: "http://manp1xa2.niagarawater.com:22000/",
     src: manhattanLogo,
   },
   {
