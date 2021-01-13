@@ -21,120 +21,99 @@ const linkData = [
     title: "Amazon",
     alt: "Amazon Logo",
     url: "https://amazon.com",
-    src: amazonLogo
+    src: amazonLogo,
   },
   {
     id: 2,
     title: "Reddit",
     alt: "Reddit Logo",
     url: "https://old.reddit.com",
-    src: redditLogo
+    src: redditLogo,
   },
   {
     id: 3,
     title: "Evernote",
     alt: "Evernote Logo",
     url: "https://www.evernote.com/client/web?login=true",
-    src: evernoteLogo
+    src: evernoteLogo,
   },
   {
     id: 4,
     title: "Messages",
     alt: "Messages Logo",
     url: "https://messages.google.com/web/conversations",
-    src: messagesLogo
+    src: messagesLogo,
   },
   {
     id: 5,
     title: "Netflix",
     alt: "Netflix Logo",
     url: "https://netflix.com",
-    src: netflixLogo
+    src: netflixLogo,
   },
   {
     id: 6,
     title: "Udemy",
     alt: "Udemy Logo",
     url: "https://udemy.com",
-    src: udemyLogo
+    src: udemyLogo,
   },
   {
     id: 7,
     title: "YouTube",
     alt: "YouTube Logo",
     url: "https://YouTube.com",
-    src: youtubeLogo
+    src: youtubeLogo,
   },
   {
     id: 8,
     title: "Calendar",
     alt: "Calendar Logo",
     url: "https://calendar.google.com/calendar/render?pli=1#main_7%7Cmonth",
-    src: calendarLogo
+    src: calendarLogo,
   },
   {
     id: 9,
     title: "Scoofer",
     alt: "Schools First Logo",
     url: "https://www.schoolsfirstfcu.org/",
-    src: scooferLogo
-  },
-  {
-    id: 10,
-    title: "Discover",
-    alt: "Discover Logo",
-    url: "https://portal.discover.com/customersvcs/universalLogin/ac_main",
-    src: dsicoverLogo
-  },
-  {
-    id: 11,
-    title: "Google Drive",
-    alt: "Google Drive Logo",
-    url: "https://drive.google.com/",
-    src: driveLogo
-  },
-  {
-    id: 12,
-    title: "My Tools",
-    alt: "My Tools Logo",
-    url: "http://mytools/splash/",
-    src: mytoolsLogo
+    src: scooferLogo,
   },
   {
     id: 13,
     title: "Splash",
     alt: "Splash Logo",
     url: "http://splash2/wpages/splash.aspx",
-    src: splashLogo
+    src: splashLogo,
   },
   {
     id: 14,
     title: "Niagara Services",
     alt: "Niagara Logo",
     url: "https://services.niagarawater.com/services",
-    src: splashLogo
+    src: splashLogo,
   },
   {
     id: 15,
     title: "Change Gear",
     alt: "ChangeGear Logo",
     url: "https://help.niagarawater.com/",
-    src: changegearLogo
+    src: changegearLogo,
   },
   {
     id: 16,
     title: "Thundercat",
     alt: "Thundercat Logo",
     url: "http://10.1.15.99/login.php",
-    src: thundercatLogo
+    src: thundercatLogo,
   },
   {
     id: 17,
     title: "xMatters",
     alt: "xMatters Logo",
     url: "https://niagarabottling.hosted.xmatters.com/xmatters/signOn.do?",
-    src: xmattersLogo
-  }
+    src: xmattersLogo,
+  },
 ];
 
 export default linkData;
