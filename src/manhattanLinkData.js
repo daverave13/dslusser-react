@@ -260,4 +260,18 @@ export default [
     url: "http://manp1xa5.niagarawater.com:12000",
     src: manhattanLogo,
   },
+  {
+    id: 40,
+    title: "STK DEV",
+    alt: "Manhattan Logo",
+    url: "http://mand2xa3.niagarawater.com:12400",
+    src: manhattanLogo,
+  },
+  {
+    id: 31,
+    title: "ST2 DEV",
+    alt: "Manhattan Logo",
+    url: "http://mand2xa3.niagarawater.com:12500",
+    src: manhattanLogo,
+  },
 ];

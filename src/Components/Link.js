@@ -1,9 +1,9 @@
 import React from "react";
 
 export default props => {
-  let replace = props => {
-    window.location.replace(props.url);
-  };
+  // let replace = props => {
+  //   window.location.replace(props.url);
+  // };
 
   return (
     <a href={props.url}>

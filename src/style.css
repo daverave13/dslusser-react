@@ -13,12 +13,12 @@ input:focus {
 
 .App {
   position: relative;
-  background-color: rgb(30, 128, 255);
-  background-image: url("../public/img/bg.png");
-  background-size: 1000px;
-  background-repeat: no-repeat;
-  background-position-x: center;
-  min-height: 100vh;
+background-color: rgb(30, 128, 255);
+background-image: url("../public/img/bg.png");
+background-size: 1000px;
+background-repeat: no-repeat;
+background-position-x: center;
+min-height: 100vh;
 }
 
 #input {
