@@ -274,4 +274,11 @@ export default [
     url: "http://mand2xa3.niagarawater.com:12500",
     src: manhattanLogo,
   },
+  {
+    id: 32,
+    title: "TEM Prod",
+    alt: "Manhattan Logo",
+    url: "http://manp1xa6.niagarawater.com:12000/",
+    src: manhattanLogo,
+  },
 ];
